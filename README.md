@@ -5,4 +5,4 @@ Read data from a file and insert into a database.
 org.springframework.batch.core.launch.support.CommandLineJobRunner
 
 ## Program Arguments
-com.tcs.spring.batch.config.JobConfig employeeJob -next
+com.tcs.spring.batch.config.EmployeeJobConfig employeeJob -next

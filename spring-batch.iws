@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa35cffb-554b-4c00-b964-a97f36ba0e7b" name="Changes" comment="" />
+    <list default="true" id="fa35cffb-554b-4c00-b964-a97f36ba0e7b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-batch.iws" beforeDir="false" afterPath="$PROJECT_DIR$/spring-batch.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/config/Components.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/config/Components.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/config/JobConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/config/EmployeeJobConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/config/StepConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/config/EmployeeLoaderStepConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/listener/JobListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/processor/EmployeeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tcs/spring/batch/processor/EmployeeLoaderProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/employees.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,6 +186,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HierarchyBrowserManager">
     <option name="SHOW_PACKAGES" value="false" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -223,6 +237,9 @@
   </component>
   <component name="ProjectColorInfo">{ &quot;associatedIndex&quot;: 1 }</component>
   <component name="ProjectId" id="2mQ5NWHPMhWlwEEQtGJxviMYszV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewSettings">
     <navigator currentView="ProjectPane" flattenPackages="false" showMembers="false" showStructure="false" autoscrollToSource="false" splitterProportion="0.5" />
     <view id="ProjectPane">
@@ -240,6 +257,7 @@
     &quot;Application.employeeJob.executor&quot;: &quot;Run&quot;,
     &quot;Maven.spring-batch [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -250,6 +268,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Amitabha\RnD\spring-batch\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tcs.spring.batch.config" />
+      <recent name="com.tcs.spring.batch.processor" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -277,7 +299,7 @@
     <configuration name="employeeJob" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.springframework.batch.core.launch.support.CommandLineJobRunner" />
       <module name="spring-batch" />
-      <option name="PROGRAM_PARAMETERS" value="com.tcs.spring.batch.config.JobConfig employeeJob -next" />
+      <option name="PROGRAM_PARAMETERS" value="com.tcs.spring.batch.config.EmployeeJobConfig employeeJob -next" />
       <shortenClasspath name="MANIFEST" />
       <method v="2">
         <option name="Make" enabled="true" />

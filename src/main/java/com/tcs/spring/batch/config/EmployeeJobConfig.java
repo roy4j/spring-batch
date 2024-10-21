@@ -1,6 +1,6 @@
 package com.tcs.spring.batch.config;
 
-import com.tcs.spring.batch.listener.JobListener;
+import com.tcs.spring.batch.listener.EmployeeJobListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -14,14 +14,20 @@ import org.springframework.context.annotation.PropertySource;
 @EnableBatchProcessing
 @SpringBootApplication(scanBasePackages = {"com.tcs.spring.batch"})
 @PropertySource({"classpath:/application.properties"})
-public class JobConfig {
+public class EmployeeJobConfig {
 
     @Bean
-    public Job employeeJob(JobRepository jobRepository, Step employeeStep, JobListener listener) {
+    public Job employeeJob(JobRepository jobRepository,
+                           Step employeeLoaderStep,
+                           Step loggerTaskletStep,
+                           Step employeeExtractorStep,
+                           EmployeeJobListener employeeJobListener) {
         return new JobBuilder("employeeJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .listener(listener)
-                .start(employeeStep)
+                .start(employeeLoaderStep)
+                .next(loggerTaskletStep)
+                .next(employeeExtractorStep)
+                .listener(employeeJobListener)
                 .build();
     }
 }
